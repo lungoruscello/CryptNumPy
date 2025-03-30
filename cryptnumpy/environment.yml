@@ -1,0 +1,12 @@
+name: base-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - pandas
+  - numpy
+  - cryptography>=41.0.4
+  - pyarrow>=14.0.1
+  - pytest

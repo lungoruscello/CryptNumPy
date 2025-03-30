@@ -1,0 +1,5 @@
+pandas
+numpy
+cryptography>=41.0.4
+pyarrow>=14.0.1
+pytest
