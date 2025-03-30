@@ -1,4 +1,4 @@
-## CryptNumPy
+## About
 
 This project is a port of Luca Mingarelli's [cryptpandas](https://github.com/LucaMingarelli/CryptPandas) package and allows 
 users to easily **encrypt and decrypt numpy arrays** in addition to pandas dataframes.
@@ -69,10 +69,10 @@ decrpyted_df = crp.read_encrypted(
 print(decrpyted_df.equals(my_df))
 ```
 By default, the `read_encrypted` function will assume that your encrypted data is a **numpy array**. 
-To load an encrypted dataframe, you need to set `use_pandas=True` (see  above).  
+To load an encrypted dataframe instead, you need to set `use_pandas=True` (see above).  
 
 If you are *only* looking to encrypt and decrypt dataframes, and do not need support for 
-numpy arrays, you should install the original `cryptpandas` package instead. `cryptnumpy` will not offer 
+numpy arrays, you should install the original `cryptpandas` package. `cryptnumpy` will not offer 
 you any additional functionalities in that case.   
 
 ### Requirements
