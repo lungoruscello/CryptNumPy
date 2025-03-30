@@ -1,3 +1,6 @@
+[![PyPI Latest Release](https://img.shields.io/pypi/v/CryptNumPy.svg)](https://pypi.org/project/CryptNumPy/)
+[![License](https://img.shields.io/pypi/l/CryptNumPy.svg)](https://github.com/lungoruscello/CryptNumPy/blob/master/LICENSE.txt)
+
 ## About
 
 This project is a port of Luca Mingarelli's [cryptpandas](https://github.com/LucaMingarelli/CryptPandas) package and allows 
@@ -12,7 +15,7 @@ You can install `cryptnumpy` with pip:
 
 ### NumPy example
 
-You can encrypt and decrypt a single *numpy array* as follows:
+You can encrypt and decrypt a *single numpy array* as follows:
 
 ```python
 import numpy as np
@@ -68,7 +71,7 @@ decrpyted_df = crp.read_encrypted(
 )
 print(decrpyted_df.equals(my_df))
 ```
-By default, the `read_encrypted` function will assume that your encrypted data is a **numpy array**. 
+Note that, by default, the `read_encrypted` function will assume your encrypted data is a **numpy array**. 
 To load an encrypted dataframe instead, you need to set `use_pandas=True` (see example above).  
 
 If you are *only* looking to encrypt and decrypt dataframes, and do not need support for 
@@ -82,6 +85,3 @@ you any additional functionalities in that case.
 -   `cryptography >= 41.0.4`
 -   `pyarrow >= 14.0.1`
 
-### Licence
-
-[MIT](LICENSE.txt)
