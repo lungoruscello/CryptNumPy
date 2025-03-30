@@ -69,7 +69,7 @@ decrpyted_df = crp.read_encrypted(
 print(decrpyted_df.equals(my_df))
 ```
 By default, the `read_encrypted` function will assume that your encrypted data is a **numpy array**. 
-To load an encrypted dataframe instead, you need to set `use_pandas=True` (see above).  
+To load an encrypted dataframe instead, you need to set `use_pandas=True` (see example above).  
 
 If you are *only* looking to encrypt and decrypt dataframes, and do not need support for 
 numpy arrays, you should install the original `cryptpandas` package. `cryptnumpy` will not offer 
